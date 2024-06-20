@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 100%;
+  min-height: 100vh;
+}
+/* nav */
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 17vh;
+  position: sticky;
+  top: 0;
+  font-family: "Playwrite NZ", cursive;
+}
+.menu-logo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+.menu img {
+  width: 140px;
+  cursor: pointer;
+  border-bottom: 1px solid #aa9387;
+}
+.middle-menu {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 50%;
+}
+.middle-menu a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
+.middle-menu a:hover {
+  color: #aa9387;
+  cursor: pointer;
+  border-bottom: 2px solid #aa9387;
+}
+.social-media {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 20%;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.social-media i {
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* menus */
+.menus {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.menus h2 {
+  font-size: 2rem;
+  font-family: "Oswald", sans-serif;
+  height: 25%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menus-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 75%;
+  width: 100%;
+}
+.menus-div img {
+  width: 45%;
+  height: 100%;
+  transition: box-shadow 0.6s ease;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.menus-div img:hover {
+  box-shadow: rgba(0, 0, 0, 0.615) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* gallery */
+.gallery {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery h2 {
+  font-size: 2rem;
+  font-family: "Oswald", sans-serif;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 90%;
+  width: 100%;
+}
+.gallery-div img {
+  width: 30%;
+  height: 40%;
+}
+/* about */
+.about {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Playwrite NZ", cursive;
+}
+.about h2 {
+  font-size: 2rem;
+  font-family: "Oswald", sans-serif;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-top {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 60%;
+  text-align: center;
+}
+.about-top div {
+  width: 30%;
+  height: 100%;
+}
+.about-bottom {
+  height: 30%;
+  width: 70%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .about-top,
+  .about-bottom {
+    font-size: 9px;
+  }
+}
+/* footer */
+.contact-footer {
+  width: 100%;
+  height: 30vh;
+  background-color: #aa9387;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.adress,
+.contact {
+  width: 50%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.adress p,
+.contact p {
+  width: 40%;
+}
+.adress {
+  border-right: 3px solid rgba(184, 184, 184, 0.485);
+}
+@media (max-width: 768px) {
+  .adress p,
+  .contact p {
+    font-size: 10px;
+  }
+}
